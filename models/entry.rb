@@ -6,7 +6,7 @@
 		@name = name
 		@phone_number = phone_number
 		@email = email
-   	end
+  	end
 
 
   	def to_s
