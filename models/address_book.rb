@@ -19,6 +19,10 @@
  		@entries.insert(index, Entry.new(name, phone, email))
  	end
 
+ 	def nuke
+ 		@entries = []
+ 	end
+
  	def import_from_csv(file_name)
  		csv_text = File.read(file_name)
  		csv = CSV.parse(csv_text, headers: true, skip_blanks: true)
